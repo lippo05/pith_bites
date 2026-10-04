@@ -179,3 +179,8 @@ footer{background:var(--deep);color:var(--sand);padding:3.5rem 5vw 1.5rem;text-a
 .nav{padding:.4rem 5vw}
 .nav .brand .logo{height:44px;max-height:44px;width:auto}
 .cart-btn{padding:.4rem 1rem}
+
+/* hero pouch */
+.hero-img{display:flex;justify-content:center;align-items:flex-end;padding:3.5rem 2rem 0;background:linear-gradient(180deg,#e6d7c0 0%,#f1e6d3 100%)}
+.hero-img img{width:auto;max-width:78%;max-height:560px;border-radius:0;transform:rotate(-3deg) translateY(1.2rem);transform-origin:bottom center;filter:drop-shadow(0 22px 22px rgba(28,51,32,.35))}
+@media(max-width:860px){.hero-img img{max-height:420px}}
