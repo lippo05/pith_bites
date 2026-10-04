@@ -110,3 +110,63 @@ footer{background:var(--deep);color:#e6d7c0;text-align:center;padding:1.5rem}
   .hero-img{border-radius:160px 160px 0 0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== Store layout (Bakeo House style, Pith Bites colours) ===== */
+.topbar{background:var(--deep);color:var(--sand);text-align:center;font-size:.88rem;padding:.45rem 5vw}
+.topbar a{color:#fff;font-weight:700}
+.nav{justify-content:space-between;padding:.8rem 5vw;background:var(--cream)}
+.brand{display:flex;align-items:center;gap:.6rem}
+.mono{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--forest);color:var(--cream);font-size:.85rem;font-weight:800}
+.nav nav{margin:0 auto;gap:1.6rem;font-size:.88rem;letter-spacing:.06em;font-weight:500}
+.nav nav a{padding:.2rem 0;border-bottom:2px solid transparent}
+.nav nav a:hover{border-color:var(--gold);color:var(--bark)}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;background:var(--forest);color:var(--cream);padding:4rem 5vw 0;min-height:70vh}
+.hero h1{color:var(--cream);font-size:clamp(3.5rem,9vw,7rem);margin:0 0 .3em}
+.hero .kicker{color:var(--sand)}
+.hero-text{align-self:center;padding-bottom:3rem}
+.hero-img{background:var(--sand);border-radius:260px 260px 0 0;padding:2.5rem 2rem 0}
+.btn.light{background:var(--cream);color:var(--forest);border-color:var(--cream)}
+.btn.light:hover{background:var(--sand)}
+
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:3.5rem 5vw;text-align:center;max-width:1150px;margin:0 auto}
+.strip h4{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--forest)}
+.announce{background:var(--sand);text-align:center;padding:2.5rem 5vw}
+.announce h3{margin-bottom:.5rem}
+.announce p{max-width:70ch;margin:.4rem auto}
+
+.shop{background:var(--cream)}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin:1rem auto 2.2rem;align-items:center}
+.tab{background:none;border:0;font:inherit;cursor:pointer;color:var(--bark);padding:.3rem .4rem;border-bottom:2px solid transparent}
+.tab.on{border-color:var(--forest);font-weight:700;color:var(--forest)}
+.products{grid-template-columns:repeat(4,1fr);max-width:1150px;margin-inline:auto;gap:1.5rem;justify-content:stretch}
+.products [hidden]{display:none}
+.product{background:#fff;border:1px solid #e6d7c0;border-radius:6px;padding:0 0 1.2rem;overflow:hidden;text-align:center;display:flex;flex-direction:column;align-items:center;transition:box-shadow .2s}
+.product:hover{box-shadow:0 8px 24px rgba(45,77,49,.15)}
+.product.best{border-color:var(--gold)}
+.thumb{width:100%;aspect-ratio:1;background:var(--sand);display:grid;place-items:center;margin-bottom:1rem}
+.thumb img{height:92%;width:auto;max-width:92%;object-fit:contain;mix-blend-mode:multiply}
+.product h4{margin:0 .8rem .2rem;font-size:1.05rem}
+.product .size{font-size:.88rem;padding:0 .8rem}
+.product .price{font-size:1.35rem;margin:.3rem 0}
+.product .btn{padding:.55rem 1.4rem;margin-top:auto}
+.badge{z-index:1;top:10px;right:10px}
+
+.exp{background:var(--sand)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem;max-width:1150px}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+
+footer{background:var(--deep);color:var(--sand);padding:3.5rem 5vw 1.5rem;text-align:left}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem;max-width:1150px;margin:0 auto}
+.fcols h4{color:#fff;margin-bottom:.8rem}
+.fcols a{display:block;color:var(--sand);text-decoration:none;margin:.3rem 0}
+.fcols a:hover{color:#fff}
+.copy{max-width:1150px;margin:2.5rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.2);font-size:.85rem}
+
+@media(max-width:1000px){.products{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.fcols{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){
+  .nav nav{margin:0}
+  .hero,.strip{grid-template-columns:1fr}
+  .hero-img{border-radius:160px 160px 0 0}
+}
+@media(max-width:520px){.products,.fcols{grid-template-columns:1fr}}
