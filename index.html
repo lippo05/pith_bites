@@ -11,40 +11,132 @@
 </head>
 <body>
 
+<div class="topbar">Order on Instagram <a href="https://www.instagram.com/pith_bites" target="_blank" rel="noopener">@Pith_Bites</a> · Locally developed in Malaysia</div>
 <header class="nav">
-  <a href="#top" class="brand">Pith Bites</a>
+  <a href="#top" class="brand"><span class="mono">PB</span>Pith Bites</a>
   <nav id="menu">
-    <a href="#about">About</a><a href="#problem">Problem</a><a href="#solution">Solution</a>
-    <a href="#shop">Shop</a><a href="#proof">Feedback</a><a href="#market">Market</a><a href="#impact">Impact</a><a href="#contact">Contact</a>
+    <a href="#top">HOME</a><a href="#shop">OUR COOKIES</a><a href="#about">ABOUT US</a>
+    <a href="#proof">REVIEW</a><a href="#market">MARKET</a><a href="#impact">IMPACT</a><a href="#contact">CONTACT US</a>
   </nav>
   <button class="cart-btn" id="openCart" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
   <button class="burger" id="burger" aria-label="Menu">☰</button>
 </header>
 
 <main id="top">
-<!-- HERO -->
+<!-- HERO BANNER -->
 <section class="hero">
   <div class="hero-text">
+    <h1>Pith Bites</h1>
     <p class="kicker">Sustainable · Nutritious · Delicious</p>
-    <h1>Pith<br>Bites</h1>
     <p class="lead">Fibre-enriched cookies crafted with upcycled durian pith. The cookie, reimagined with an unconventional, Malaysian twist.</p>
-    <div class="row"><a class="btn" href="#shop">Buy now</a><a class="btn ghost" href="#about">Our story</a></div>
-    <p class="mini">Locally developed in Malaysia · Pack of 5 from RM6.90 · Pack of 10 from RM12.90</p>
+    <div class="row"><a class="btn light" href="#shop">Discover all cookies</a></div>
   </div>
   <div class="hero-img"><img src="images/pouches.jpg" alt="Pith Bites pouches, 10×15 cm and 14×20 cm"></div>
 </section>
 
+<!-- TRUST STRIP -->
+<section class="strip">
+  <div><h4>Upcycled durian pith</h4><p>Made from durian pith powder, giving an underutilized agricultural by-product a new life.</p></div>
+  <div><h4>Fibre enriched</h4><p>Incorporates durian pith as an additional source of dietary fibre.</p></div>
+  <div><h4>Malaysian twist</h4><p>Transforming a local delicacy into an innovative and convenient snack.</p></div>
+</section>
+
+<!-- ANNOUNCEMENT -->
+<section class="announce">
+  <h3>Announcement</h3>
+  <p><strong>Order through Instagram:</strong> add packs to your cart, then send your order to <a href="https://www.instagram.com/pith_bites" target="_blank" rel="noopener">@Pith_Bites</a>.</p>
+  <p>🏆 <strong>Gold Award</strong> – Food Innovation, Competition &amp; Exhibition (FICE) 2026, UiTM Cawangan Selangor, Kampus Puncak Alam</p>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="sec shop">
+  <h2 class="center">Our Cookies</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab on" data-f="all">All</button><span>/</span>
+    <button class="tab" data-f="orig">Original Chocolate Chip</button><span>/</span>
+    <button class="tab" data-f="coffee">Coffee &amp; Macadamia</button>
+  </div>
+  <div class="products">
+    <article class="product " data-id="p5o" data-name="Bites for One! (5 pcs)" data-flavour="Original Chocolate Chip" data-price="6.90" data-cat="orig">
+      
+      <div class="thumb"><img src="images/pack5.jpg" alt="Bites for One! (5 pcs) – Original Chocolate Chip"></div>
+      <h4>Bites for One! (5 pcs)</h4><p class="size">Original Chocolate Chip · 10 × 15 cm pouch</p>
+      <p class="price">RM6.90</p>
+      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
+      <button class="btn add">Add to cart</button>
+    </article>
+    <article class="product " data-id="p5c" data-name="Bites for One! (5 pcs)" data-flavour="Coffee &amp; Macadamia" data-price="6.90" data-cat="coffee">
+      
+      <div class="thumb"><img src="images/pack5.jpg" alt="Bites for One! (5 pcs) – Coffee &amp; Macadamia"></div>
+      <h4>Bites for One! (5 pcs)</h4><p class="size">Coffee &amp; Macadamia · 10 × 15 cm pouch</p>
+      <p class="price">RM6.90</p>
+      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
+      <button class="btn add">Add to cart</button>
+    </article>
+    <article class="product best" data-id="p10o" data-name="Value Pack! (10 pcs)" data-flavour="Original Chocolate Chip" data-price="12.90" data-cat="orig">
+      <span class="badge">Best value</span>
+      <div class="thumb"><img src="images/pack10.jpg" alt="Value Pack! (10 pcs) – Original Chocolate Chip"></div>
+      <h4>Value Pack! (10 pcs)</h4><p class="size">Original Chocolate Chip · 14 × 20 cm pouch</p>
+      <p class="price">RM12.90</p>
+      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
+      <button class="btn add">Add to cart</button>
+    </article>
+    <article class="product best" data-id="p10c" data-name="Value Pack! (10 pcs)" data-flavour="Coffee &amp; Macadamia" data-price="12.90" data-cat="coffee">
+      <span class="badge">Best value</span>
+      <div class="thumb"><img src="images/pack10.jpg" alt="Value Pack! (10 pcs) – Coffee &amp; Macadamia"></div>
+      <h4>Value Pack! (10 pcs)</h4><p class="size">Coffee &amp; Macadamia · 14 × 20 cm pouch</p>
+      <p class="price">RM12.90</p>
+      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
+      <button class="btn add">Add to cart</button>
+    </article>
+  </div>
+  <p class="fine center">*Value Pack based on 100 g finished net weight; to be confirmed after baking. Choose your pack! Enjoy every bite.</p>
+  <h3 class="gap center">A little bite. A different story.</h3>
+  <table class="cmp">
+    <thead><tr><th></th><th>Pith Bites</th><th>Famous Amos</th></tr></thead>
+    <tbody>
+      <tr><td>Pack</td><td>100 g Value Pack*</td><td>100 g cookies</td></tr>
+      <tr><td>Price</td><td><strong>RM12.90</strong> (proposed retail price)</td><td>RM14.90 (standard-outlet listed price)</td></tr>
+      <tr><td>Difference</td><td colspan="2"><strong>RM2 less per 100 g</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="center"><em>Familiar flavours. A distinctive upcycled ingredient.</em></p>
+  <p class="fine center">Source: Famous Amos official price list, checked 1 Oct 2026. Prices vary by outlet and promotion. *Comparison assumes 100 g finished net weight for Pith Bites; confirm after baking.</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec exp">
+  <h2 class="center">The Cookie Experience</h2>
+  <div class="gallery">
+    <img src="images/cookies.jpg" alt="Pith Bites cookies on a green plate">
+    <img src="images/award.jpg" alt="Pith Bites pouch with Gold Award trophy">
+    <img src="images/poster.jpg" alt="Greenfork Lab presents Pith Bites poster">
+    <img src="images/infographic.jpg" alt="Pith Bites infographic">
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about" class="sec">
-  <h2>So, who are we?</h2>
+  <h2>About us: so, who are we?</h2>
   <div class="two">
     <div>
       <h3>PithBites – sustainable, nutritious, delicious</h3>
       <p>We are a sustainable food innovation venture that aims to transform underutilized durian pith into a value-added, fibre-enriched cookie.</p>
       <p>Presented by Haseen &amp; Huda. Pith Bites is presented by Greenfork Lab.</p>
-      <p class="award">🏆 Gold Award – Food Innovation, Competition &amp; Exhibition (FICE) 2026, UiTM Cawangan Selangor, Kampus Puncak Alam</p>
+      <h3 class="gap">Key features</h3>
+      <ul class="chips"><li>Fibre-enriched snack</li><li>Made from upcycled durian pith</li><li>Natural and locally inspired ingredients</li><li>Unique texture and taste</li><li>Convenient ready-to-eat format</li><li>Made with high quality ingredients</li></ul>
     </div>
-    <img class="rounded" src="images/award.jpg" alt="Pith Bites pouch beside the Gold Award trophy">
+    <div>
+      <h3>What sets us apart?</h3>
+      <p><strong>Our USP:</strong> Overlooked durian pith to an everyday snack. The cookie, reimagined with an unconventional, Malaysian twist.</p>
+      <p>Pith Bites transforms upcycled durian pith into Pith Powder, then incorporates it into a delicious cookie format that is familiar and easy to enjoy. This creates value from an overlooked material while supporting more sustainable food innovation.</p>
+    </div>
+  </div>
+  <h3 class="gap">Our solution? Meet PithBites</h3>
+  <div class="grid3">
+    <article class="card"><h4>Upcycling durian pith</h4><ul><li>Transform the by-product into a usable food ingredient</li><li>Gives it a second use instead of treating it solely as waste</li></ul></article>
+    <article class="card"><h4>Turning by-products into food value</h4><ul><li>Process it into a value-added ingredient</li><li>Create a new application + potential economic value</li></ul></article>
+    <article class="card"><h4>Reimagining the everyday cookie</h4><ul><li>Innovative cookie that combines familiar snacking with an unconventional, upcycled ingredient</li><li>Distinctive snack option that connects taste, nutrition, and sustainability</li></ul></article>
   </div>
 </section>
 
@@ -57,71 +149,11 @@
     <article><h4>Underutilized food resource</h4><ul><li>Valuable biomass is usually overlooked</li></ul></article>
     <article><h4>Conventional snack choices</h4><ul><li>Consumers have increasing interest in foods that combine convenience, nutrition, and sustainability</li><li>Available products might not be appealing or enjoyable</li></ul></article>
   </div>
-  <div class="two tight">
-    <ul class="ticks">
-      <li>Large amounts of durian pith are often discarded as waste</li>
-      <li>Consumers are seeking healthier and more sustainable snack options</li>
-      <li>There is limited availability of local fibre-enriched snacks</li>
-    </ul>
-    <img class="rounded" src="images/cookies.jpg" alt="Two Pith Bites cookies on a green plate">
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section id="solution" class="sec">
-  <h2>Our solution? Meet PithBites</h2>
-  <div class="grid3">
-    <article class="card"><h4>Upcycling durian pith</h4><ul><li>Transform the by-product into a usable food ingredient</li><li>Gives it a second use instead of treating it solely as waste</li></ul></article>
-    <article class="card"><h4>Turning by-products into food value</h4><ul><li>Process it into a value-added ingredient</li><li>Create a new application + potential economic value</li></ul></article>
-    <article class="card"><h4>Reimagining the everyday cookie</h4><ul><li>Innovative cookie that combines familiar snacking with an unconventional, upcycled ingredient</li><li>Distinctive snack option that connects taste, nutrition, and sustainability</li></ul></article>
-  </div>
-  <p class="note">Pith Bites transforms upcycled durian pith into Pith Powder, then incorporates it into a delicious cookie format that is familiar and easy to enjoy. This creates value from an overlooked material while supporting more sustainable food innovation.</p>
-
-  <h3 class="gap">What sets us apart?</h3>
-  <p><strong>Our USP:</strong> Overlooked durian pith to an everyday snack. The cookie, reimagined with an unconventional, Malaysian twist.</p>
-  <div class="grid3">
-    <article class="card"><h4>Upcycled ingredient</h4><p>Made from durian pith powder, giving an underutilized agricultural by-product a new life.</p></article>
-    <article class="card"><h4>Fibre enriched</h4><p>Incorporates durian pith as an additional source of dietary fibre.</p></article>
-    <article class="card"><h4>Malaysian twist</h4><p>Transforming a local delicacy into an innovative and convenient snack.</p></article>
-  </div>
-  <h3 class="gap">Key features</h3>
-  <ul class="chips"><li>Fibre-enriched snack</li><li>Made from upcycled durian pith</li><li>Natural and locally inspired ingredients</li><li>Unique texture and taste</li><li>Convenient ready-to-eat format</li><li>Made with high quality ingredients</li></ul>
-</section>
-
-<!-- SHOP -->
-<section id="shop" class="sec shop">
-  <h2>Choose your pack! Enjoy every bite.</h2>
-  <p class="center">Two flavours: Original Chocolate Chip and Coffee &amp; Macadamia.</p>
-  <div class="products">
-    <article class="product" data-id="p5" data-name="Bites for One! (5 pieces)" data-price="6.90">
-      <img src="images/pouches.jpg" alt="" class="crop crop-s">
-      <h3>Bites for One!</h3><p class="size">5 pieces · 10 × 15 cm pouch</p><p class="price">RM6.90</p>
-      <label>Flavour <select class="flavour"><option>Original Chocolate Chip</option><option>Coffee &amp; Macadamia</option></select></label>
-      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
-      <button class="btn add">Add to cart</button>
-    </article>
-    <article class="product best" data-id="p10" data-name="Value Pack! (10 pieces)" data-price="12.90">
-      <span class="badge">Best value</span>
-      <img src="images/pouches.jpg" alt="" class="crop crop-l">
-      <h3>Value Pack!</h3><p class="size">10 pieces · 14 × 20 cm pouch · 100 g*</p><p class="price">RM12.90</p>
-      <label>Flavour <select class="flavour"><option>Original Chocolate Chip</option><option>Coffee &amp; Macadamia</option></select></label>
-      <div class="qty"><button class="minus" aria-label="Less">−</button><span class="q">1</span><button class="plus" aria-label="More">+</button></div>
-      <button class="btn add">Add to cart</button>
-    </article>
-  </div>
-  <p class="fine">*Based on 100 g finished net weight; to be confirmed after baking. To buy, add packs to your cart and send your order to us on Instagram <a href="https://www.instagram.com/pith_bites" target="_blank" rel="noopener">@Pith_Bites</a>. We confirm availability, payment and delivery there.</p>
-
-  <h3 class="gap center">A little bite. A different story.</h3>
-  <table class="cmp">
-    <thead><tr><th></th><th>Pith Bites</th><th>Famous Amos</th></tr></thead>
-    <tbody>
-      <tr><td>Pack</td><td>100 g Value Pack*</td><td>100 g cookies</td></tr>
-      <tr><td>Price</td><td><strong>RM12.90</strong> (proposed retail price)</td><td>RM14.90 (standard-outlet listed price)</td></tr>
-      <tr><td>Difference</td><td colspan="2"><strong>RM2 less per 100 g</strong></td></tr>
-    </tbody>
-  </table>
-  <p class="center"><em>Familiar flavours. A distinctive upcycled ingredient.</em></p>
-  <p class="fine center">Source: Famous Amos official price list, checked 1 Oct 2026. Prices vary by outlet and promotion. *Comparison assumes 100 g finished net weight for Pith Bites; confirm after baking.</p>
+  <ul class="ticks gap">
+    <li>Large amounts of durian pith are often discarded as waste</li>
+    <li>Consumers are seeking healthier and more sustainable snack options</li>
+    <li>There is limited availability of local fibre-enriched snacks</li>
+  </ul>
 </section>
 
 <!-- PROOF -->
@@ -200,7 +232,15 @@
 </section>
 </main>
 
-<footer><p>© 2026 Pith Bites · Greenfork Lab · Sustainable · Nutritious · Delicious</p></footer>
+<footer>
+  <div class="fcols">
+    <div><h4>Pith Bites</h4><p>Pith Bites offers fibre-enriched cookies. We focus on sustainability, innovation and local pride, turning overlooked durian pith into a snack worth sharing.</p><p>Email: <a href="mailto:pithbites@gmail.com">pithbites@gmail.com</a></p></div>
+    <div><h4>Menu</h4><a href="#top">Home</a><a href="#shop">Our Cookies</a><a href="#about">About Us</a><a href="#proof">Review</a><a href="#contact">Contact Us</a></div>
+    <div><h4>Categories</h4><a href="#shop">Bites for One! (5 pcs)</a><a href="#shop">Value Pack! (10 pcs)</a><a href="#shop">Original Chocolate Chip</a><a href="#shop">Coffee &amp; Macadamia</a></div>
+    <div><h4>Follow us</h4><a href="https://www.instagram.com/pith_bites" target="_blank" rel="noopener">Instagram @Pith_Bites</a><a href="https://www.pithbites.com">www.pithbites.com</a></div>
+  </div>
+  <p class="copy">© 2026 Pith Bites · Greenfork Lab · All rights reserved</p>
+</footer>
 
 <!-- CART DRAWER -->
 <div class="overlay" id="overlay"></div>
