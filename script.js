@@ -33,7 +33,7 @@
     $('.minus', p).onclick = () => q.textContent = Math.max(1, +q.textContent - 1);
     $('.plus', p).onclick = () => q.textContent = Math.min(20, +q.textContent + 1);
     $('.add', p).onclick = () => {
-      const flavour = $('.flavour', p).value, id = p.dataset.id + flavour;
+      const flavour = p.dataset.flavour, id = p.dataset.id;
       const qty = +q.textContent, found = cart.find(c => c.id === id);
       if (found) found.qty += qty;
       else cart.push({ id, name: p.dataset.name, flavour, price: +p.dataset.price, qty });
@@ -55,6 +55,12 @@
   $('#openCart').onclick = () => toggle(true);
   $('#closeCart').onclick = $('#overlay').onclick = () => toggle(false);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
+
+  // flavour filter tabs
+  $$('.tab').forEach(t => t.onclick = () => {
+    $$('.tab').forEach(x => x.classList.toggle('on', x === t));
+    $$('.product').forEach(p => p.hidden = t.dataset.f !== 'all' && p.dataset.cat !== t.dataset.f);
+  });
 
   // mobile menu
   $('#burger').onclick = () => $('#menu').classList.toggle('open');
