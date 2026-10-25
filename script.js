@@ -66,19 +66,15 @@
   $('#burger').onclick = () => $('#menu').classList.toggle('open');
   $$('#menu a').forEach(a => a.onclick = () => $('#menu').classList.remove('open'));
 
-  // checkout: copy the order text, then open Instagram so the customer can paste it in a DM
-  const IG = 'https://www.instagram.com/pith_bites';
-  $('#igOrder').addEventListener('click', async () => {
+  // checkout: open WhatsApp with the order already typed
+  const WA = '60173829512';
+  $('#waOrder').addEventListener('click', () => {
     if (!cart.length) { $('#msg').textContent = 'Add at least one pack before ordering.'; return; }
     const lines = cart.map(c => `- ${c.qty} x ${c.name}, ${c.flavour} (${rm(c.price * c.qty)})`).join('\n');
     const total = rm(cart.reduce((s, c) => s + c.price * c.qty, 0));
-    const text = `Hi Pith Bites! I would like to order:\n${lines}\nTotal: ${total}\nName:\nDelivery address:`;
-    let copied = true;
-    try { await navigator.clipboard.writeText(text); } catch (e) { copied = false; }
-    window.open(IG, '_blank', 'noopener');
-    $('#msg').textContent = copied
-      ? 'Order copied. Paste it into a message to @Pith_Bites on Instagram, and add your name and address.'
-      : 'Instagram opened. Send us this order: ' + text.replace(/\n/g, ' | ');
+    const text = `Hi Pith Bites! I would like to order:\n${lines}\nTotal: ${total}\n\nName:\nDelivery address:`;
+    window.open(`https://wa.me/${WA}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    $('#msg').textContent = 'WhatsApp opened with your order. Add your name and address, then press send.';
   });
 
   render();
